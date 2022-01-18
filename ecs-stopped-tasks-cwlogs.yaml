@@ -28,6 +28,9 @@ Resources:
             - STOPPED
           lastStatus:
             - STOPPED
+          containers:
+            reason:
+              - prefix: "OutOfMemory"
       State: ENABLED
       Targets:
         - Arn: !GetAtt LogGroup.Arn
